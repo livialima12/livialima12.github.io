@@ -1,0 +1,22 @@
+.work, #about {
+  margin:  3rem 0 3rem 0;
+}
+
+/* Cards */
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card{
+  min-width: 25vw;
+  background: grey
+}
+
+.card-title{
+  font-size: 30px;
+  line-height: 50px;
+}
+
