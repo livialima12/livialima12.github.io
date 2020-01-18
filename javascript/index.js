@@ -23,4 +23,72 @@
   ).join("")
 
   element.innerHTML = array
+})();
+
+
+(function dinamicWorkCards(){
+
+  const cardsList = [
+    {
+      title: "Futscorebet", 
+      description: 'loren ipson', 
+      language: 'javascript', 
+      database: 'firebase', 
+      link: 'https://github.com/livialima12/futscorebet'
+    },
+    {
+      title: "Futscorebet", 
+      description: 'loren ipson', 
+      language: 'javascript', 
+      database: 'firebase', 
+      link: 'https://github.com/livialima12/futscorebet'
+    },
+    {
+      title: "Futscorebet", 
+      description: 'loren ipson', 
+      language: 'javascript', 
+      database: 'firebase', 
+      link: 'https://github.com/livialima12/futscorebet'
+    },
+    {
+      title: "Futscorebet", 
+      description: 'loren ipson', 
+      language: 'javascript', 
+      database: 'firebase', 
+      link: 'https://github.com/livialima12/futscorebet'
+    },
+    {
+      title: "Futscorebet", 
+      description: 'loren ipson', 
+      language: 'javascript', 
+      database: 'firebase', 
+      link: 'https://github.com/livialima12/futscorebet'
+    },
+    {
+      title: "Futscorebet", 
+      description: 'loren ipson', 
+      language: 'javascript', 
+      database: 'firebase', 
+      link: 'https://github.com/livialima12/futscorebet'
+    }
+  ]
+
+  const cardDiv = document.querySelector('.cards');
+
+  const divList = cardsList.map(card => {
+    return `
+      <li class='card'>
+      <a href="${card.link}">
+        <p class="card-title">${card.title}</p>
+        <p class="card-description">${card.description}</p>
+        <div class="card-tags-info>
+        <p class="card-language">${card.language}</p>
+        <p class="card-database">${card.database}</p>
+        </div>
+        </a>
+      </li>
+    `
+  })
+
+  cardDiv.innerHTML = divList
 })()
