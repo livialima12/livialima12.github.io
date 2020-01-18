@@ -1,0 +1,79 @@
+#greeting-image{
+  display: none;
+}
+
+.greeting {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+
+#greeting-text > p {
+  padding-top: 30px;
+}
+
+.icons{
+  font-size: 36px;
+  width: 200%;
+}
+
+.social-media-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin: 32px auto 0 auto;
+}
+
+.github-icon, .dev-icon {
+  color: black;
+}
+
+.linkedin-icon{
+  color: #2867B2;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:1025px) { 
+
+  .greeting-wrapper{
+    height: 100%;
+  }
+
+  .greeting{
+    display: flex;
+    flex-direction: row-reverse;
+
+    align-items: center;
+    width: 100%;
+  
+  }
+
+  #greeting-image{
+    display: block;
+    width:40vw;
+    height:auto;
+    padding-left: 10%;
+  }
+  
+
+
+}
+
+@media (min-width:600px) and (max-width:1025px) { 
+  #greeting-image {
+    display: block;
+    width: 70vw;
+    padding-bottom: 10vh;
+    padding-bottom: 3vh;
+    margin: auto;
+  }
+
+}
